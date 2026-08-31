@@ -1945,11 +1945,14 @@ width: 50%; }
   .hero {
     padding: 8rem 0 4rem;
   }
+  .footer-brand-col { grid-column: 1 / 2;
+width: 80%; }
   .footer-section{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    gap: 23px;
-    margin-left: 0;
+    gap: 30px;
+    margin-left: 2%;
   }
 
   .hero-image {
