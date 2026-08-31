@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pep's Diamond Empire</title>
+  <link rel="icon" type="image/png" href="asset/peps looogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="diamond-loader">
+      <img src="asset/peps looogo.png" alt="Pep's Diamond Empire Logo" class="brand-logo">
+    </div>
+    <div class="loader-text">Pep's <span>Diamond</span> Empire</div>
+  </div>
+
+  <div class="page-overlay" id="page-overlay"></div>
+  <header class="site-header">
+    <nav class="navbar container">
+      <div class="brand">
+        <img src="asset/peps looogo.png" alt="Pep's Diamond Empire" class="brand-logo">
+        <a href="index.html" class="brand-name">Pep's <span>Diamond</span> Empire</a>
+      </div>
+      <button class="menu-toggle" id="mobile-menu" title="Toggle navigation" aria-label="Open navigation menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="nav-links">
+        <button class="nav-close-btn" id="nav-close-btn" title="Close menu" aria-label="Close navigation menu"><i class="fas fa-times"></i></button>
+        <li><a href="#home">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <a href="wishlist.html" class="header-wishlist-btn" title="My Wishlist" aria-label="View Wishlist">
+          <i class="fas fa-heart"></i>
+          <span class="wishlist-counter">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <!-- Video Background -->
+      <video autoplay muted loop playsinline class="hero-video-bg">
+        <source src="asset/Untitled-design.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-inner fade-in">
+        <div class="hero-copy">
+          <span class="eyebrow">STYLE. QUALITY. CONFIDENCE.</span>
+          <h1>Elevate Your Style.</h1>
+          <p>Luxury fashion designed for modern living. Discover timeless pieces meticulously crafted for the discerning individual.</p>
+          <div class="hero-actions">
+            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+            <a href="#about" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-product-rotator">
+          <img src="asset/Men wears/61695.jpg" alt="Rotating Product 1" style="--i:1;">
+          <img src="asset/Men wears/61697.jpg" alt="Rotating Product 2" style="--i:2;">
+          <img src="asset/shoes/61441.jpg" alt="Rotating Product 3" style="--i:3;">
+          <img src="asset/shoes/61728.jpg" alt="Rotating Product 4" style="--i:4;">
+          <img src="asset/Womenwears/61432.jpg" alt="Rotating Product 5" style="--i:5;">
+          <img src="asset/Womenwears/61435.jpg" alt="Rotating Product 6" style="--i:6;">
+        </div>
+      </div>
+    </section>
+
+    <section class="category-nav">
+      <div class="container">
+        <div class="category-nav-inner">
+          <a href="shop.html?category=women" class="category-pill active">
+            <img src="asset/Womenwears/61799.jpg" alt="Women" loading="lazy">
+            <span>Women</span>
+          </a>
+          <a href="shop.html?category=men" class="category-pill">
+            <img src="asset/Men wears/61697.jpg" alt="Men" loading="lazy">
+            <span>Men</span>
+          </a>
+          <a href="shop.html?category=women" class="category-pill">
+            <img src="asset/Womenwears/61432.jpg" alt="Dresses" loading="lazy">
+            <span>Dresses</span>
+          </a>
+          <a href="shop.html?category=women" class="category-pill">
+            <img src="asset/Womenwears/61777.jpg" alt="Tops" loading="lazy">
+            <span>Tops</span>
+          </a>
+          <a href="shop.html?category=shoes" class="category-pill">
+            <img src="asset/shoes/61728.jpg" alt="Shoes" loading="lazy">
+            <span>Shoes</span>
+          </a>
+          <a href="shop.html?category=bags" class="category-pill">
+            <img src="asset/bags/download5.jpg" alt="Bags" loading="lazy">
+            <span>Bags</span>
+          </a>
+          <a href="shop.html?category=accessories" class="category-pill">
+            <img src="asset/accessories/accessories.jpg" alt="Accessories" loading="lazy">
+            <span>Accessories</span>
+          </a>
+          <a href="shop.html" class="category-pill category-pill-sale">
+            <img src="asset/peps looogo.png" alt="Sale">
+            <span>Sale</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-by-category fade-in" id="categories">
+      <div class="container section-header">
+        <h2>Find Your Perfect Style</h2>
+        <a href="shop.html" class="more-link">View All Categories →</a>
+      </div>
+      <div class="cards-grid-wrapper">
+        <article class="category-card">
+          <img src="asset/Womenwears/61795.jpg" alt="Women's Collection" loading="lazy">
+          <div class="card-overlay"></div>
+          <div class="card-copy">
+            <h3>Women's Collection</h3>
+            <a href="shop.html?category=women" class="btn btn-tertiary">Explore Now</a>
+          </div>
+        </article>
+        <article class="category-card">
+          <img src="asset/Men wears/61713.jpg" alt="Men's Collection" loading="lazy">
+          <div class="card-overlay"></div>
+          <div class="card-copy">
+            <h3>Men's Collection</h3>
+            <a href="shop.html?category=men" class="btn btn-tertiary">Explore Now</a>
+          </div>
+        </article>
+        <article class="category-card">
+          <img src="asset/Womenwears/61699.jpg" alt="Dresses" loading="lazy">
+          <div class="card-overlay"></div>
+          <div class="card-copy">
+            <h3>Dresses</h3>
+            <a href="shop.html?category=women" class="btn btn-tertiary">Explore Now</a>
+          </div>
+        </article>
+        <article class="category-card">
+          <img src="asset/accessories/accessories.jpg" alt="Accessories" loading="lazy">
+          <div class="card-overlay"></div>
+          <div class="card-copy">
+            <h3>Accessories</h3>
+            <a href="shop.html?category=accessories" class="btn btn-tertiary">Explore Now</a>
+          </div>
+        </article>
+        <article class="category-card">
+          <img src="asset/shoes/61728.jpg" alt="Shoes Collection" loading="lazy">
+          <div class="card-overlay"></div>
+          <div class="card-copy">
+            <h3>Shoes Collection</h3>
+            <a href="shop.html?category=shoes" class="btn btn-tertiary">Explore Now</a>
+          </div>
+        </article>
+        <article class="category-card">
+          <img src="asset/bags/download5.jpg" alt="Bags Collection" loading="lazy">
+          <div class="card-overlay"></div>
+          <div class="card-copy">
+            <h3>Bags Collection</h3>
+            <a href="shop.html?category=bags" class="btn btn-tertiary">Explore Now</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="promo-row fade-in">
+      <div class="container promo-grid">
+        <article class="promo-card">
+          <div>
+            <span>Spring Sale</span>
+            <h3>Spring Sale Up To 50% Off</h3>
+            <p>Refresh your wardrobe with soft neutrals and luxurious silhouettes.</p>
+            <a href="shop.html" class="btn btn-primary">Shop The Sale</a>
+          </div>
+          <img src="asset/Womenwears/61432.jpg" alt="Spring sale fashion" loading="lazy">
+        </article>
+        <article class="promo-card promo-card-light">
+          <div>
+            <span>New Arrivals</span>
+            <h3>Fresh Styles Just Landed</h3>
+            <p>Discover the latest pieces curated for effortless modern dressing.</p>
+            <a href="shop.html" class="btn btn-primary">Explore New In</a>
+          </div>
+          <img src="asset/Womenwears/61784.jpg" alt="New arrival fashion" loading="lazy">
+        </article>
+      </div>
+    </section>
+
+    <section class="best-sellers fade-in" id="shop">
+      <div class="container section-header">
+        <h2>Our Most Loved Picks</h2>
+        <a href="shop.html" class="more-link">View All Products →</a>
+      </div>
+      <div class="grid product-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="asset/Men wears/61438.jpg" alt="Italian pant trouser" loading="lazy">
+            <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+            <button class="inquire-btn" data-product="Italian pant trouser - ₦25,000.00" title="Ask about this product on WhatsApp">
+              <i class="fas fa-comment-dots"></i> Inquire
+            </button>
+          </div>
+          <div class="product-copy">
+            <h3>Italian pant trouser</h3>
+            <p class="price">₦25,000</p>
+            <div class="product-meta">
+              <span>★★★★☆</span>
+              <small>12 reviews</small>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="asset/Men wears/61701.jpg" alt="Ribbed Knit Top" loading="lazy">
+            <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+            <button class="inquire-btn" data-product="Luxury Senator Men 2pcs set - ₦35,000.00" title="Ask about this product on WhatsApp">
+              <i class="fas fa-comment-dots"></i> Inquire
+            </button>
+          </div>
+          <div class="product-copy">
+            <h3>Luxury Senator Men 2pcs set</h3>
+            <p class="price">₦35,000</p>
+            <div class="product-meta">
+              <span>★★★★☆</span>
+              <small>98 reviews</small>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="asset/Men wears/61697.jpg" alt="Wide Leg Trousers" loading="lazy">
+            <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+            <button class="inquire-btn" data-product="US standard Condom Shirt - ₦20,000.00" title="Ask about this product on WhatsApp">
+              <i class="fas fa-comment-dots"></i> Inquire
+            </button>
+          </div>
+          <div class="product-copy">
+            <h3>US standard Condom Shirt</h3>
+            <p class="price">₦20,000</p>
+            <div class="product-meta">
+              <span>★★★★☆</span>
+              <small>15 reviews</small>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="asset/Womenwears/61759.jpg" alt="Crazy Baggy jean" loading="lazy">
+            <span class="product-badge">Sale</span>
+            <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+            <button class="inquire-btn" data-product="Crazy Baggy jean - ₦17,000" title="Ask about this product on WhatsApp">
+              <i class="fas fa-comment-dots"></i> Inquire
+            </button>
+          </div>
+          <div class="product-copy">
+            <h3>Crazy Baggy jean</h3>
+            <p class="price">₦17,000</p>
+            <div class="product-meta">
+              <span>★★★★☆</span>
+              <small>11 reviews</small>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="asset/Womenwears/61777.jpg" alt="Women Top" loading="lazy">
+            <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+            <button class="inquire-btn" data-product="White Patterned Ladies Top - ₦10,000.00" title="Ask about this product on WhatsApp">
+              <i class="fas fa-comment-dots"></i> Inquire
+            </button>
+          </div>
+          <div class="product-copy">
+            <h3>Top</h3>
+            <p class="price">₦10,000</p>
+            <div class="product-meta">
+              <span>★★★★☆</span>
+              <small>10 reviews</small>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="asset/Men wears/61731.jpg" alt="Luxury condom shirt" loading="lazy">
+            <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+            <button class="inquire-btn" data-product="Luxury condom shirt - ₦17,000 from your website." title="Ask about this product on WhatsApp">
+              <i class="fas fa-comment-dots"></i> Inquire
+            </button>
+          </div>
+          <div class="product-copy">
+            <h3>Luxury condom shirt</h3>
+            <p class="price">₦17,000</p>
+            <div class="product-meta">
+              <span>★★★★☆</span>
+              <small>14 reviews</small>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About The Brand Section -->
+    <section class="about-brand fade-in" id="about">
+      <div class="container">
+        <div class="about-header">
+          <h2 class="about-title">About The Brand</h2>
+          <div class="about-slogan">
+            <p>Luxury Within Reach</p>
+          </div>
+        </div>
+        
+        <div class="about-content-wrapper">
+          <div class="about-text">
+            <p class="about-intro">Pep's Diamond Empire is a Nigerian fashion and lifestyle brand specializing in quality clothing, shoes, bags, wigs and fashion accessories. We offer wholesales, retails and dropshipping services, making it for customers and entrepreneurs to access quality product at competitive prices.</p>
+            <p class="about-mission">Our goal is to provide stylish, affordable products while delivering escellent customer serviceand a seamless shopping experience.</p>
+          </div>
+          <div class="about-stats animated-stats">
+            <div class="stat-item">
+              <strong class="stat-number" data-target="500">0+</strong>
+              <span>Happy Customers</span>
+            </div>
+            <div class="stat-item">
+              <strong class="stat-number" data-target="1000">0+</strong>
+              <span>Products Sold</span>
+            </div>
+            <div class="stat-item">
+              <strong><i class="fas fa-truck"></i></strong>
+              <span>Nationwide Delivery</span>
+            </div>
+            <div class="stat-item">
+              <strong><i class="fas fa-gem"></i></strong>
+              <span>Premium Quality</span>
+            </div>
+          </div>
+
+          <div class="brand-slogans">
+            <h3 class="option">SLOGAN OPTION</h3>
+            <div class="slogans-grid">
+              <div class="slogan-item" style="display: none;">
+                <i class="fas fa-quote-left"></i>
+                <p>Wear it. Love it. Own it.</p>
+              </div>
+              <div class="slogan-item">
+                <i class="fas fa-quote-left"></i>
+                <p>Luxury Within Reach.</p>
+              </div>
+              <div class="slogan-item">
+                <i class="fas fa-quote-left"></i>
+                <p>Style. Quality. Confidence.</p>
+              </div>
+              <div class="slogan-item">
+                <i class="fas fa-quote-left"></i>
+                <p>Where Fashion Meets Elegance.</p>
+              </div>
+              <div class="slogan-item">
+                <i class="fas fa-quote-left"></i>
+                <p>Affordable Luxury, Always.</p>
+              </div>
+              <div class="slogan-item">
+                <i class="fas fa-quote-left"></i>
+                <p>Wholesale . Retail . Dropshipping</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>Voices of Our Community</h2>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"The quality is unmatched. I feel so confident in my new suit. It's clear they pay attention to every single detail."</p>
+            <div class="testimonial-author">
+              <img src="asset/Men wears/61713.jpg" alt="Samuel O." class="author-img" loading="lazy">
+              <div class="author-info">
+                <strong>Samuel O.</strong>
+                <span>Lagos, Nigeria</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"I ordered a dress for a wedding and it was perfect! The delivery was fast and the customer service was so helpful."</p>
+            <div class="testimonial-author">
+              <img src="asset/Womenwears/61432.jpg" alt="Blessing A." class="author-img" loading="lazy">
+              <div class="author-info">
+                <strong>Blessing A.</strong>
+                <span>Abuja, Nigeria</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services fade-in" id="services">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-boxes"></i>
+            </div>
+            <h3>Wholesale Supply</h3>
+            <p>Bulk orders with competitive pricing for retailers and entrepreneurs.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>Retail Sales</h3>
+            <p>Direct shopping experience for individual customers seeking quality pieces.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Dropshipping</h3>
+            <p>Start your fashion business with our hassle-free dropshipping program.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-tshirt"></i>
+            </div>
+            <h3>Clothing</h3>
+            <p>Premium collection of dresses, suits, casual wear and more.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-shoe-prints"></i>
+            </div>
+            <h3>Shoes &amp; Slippers</h3>
+            <p>Stylish and comfortable footwear for every occasion.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-wind"></i>
+            </div>
+            <h3>Wigs</h3>
+            <p>Complete your look with our curated collection of wigs and fashion accessories.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-magic"></i>
+            </div>
+            <h3>Product Sourcing</h3>
+            <p>Custom sourcing solutions tailored to your business needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info fade-in" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-methods">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>WhatsApp / Call</h3>
+            <p><a href="https://wa.me/2348165312235" target="_blank" rel="noopener noreferrer">+234 816 531 2235</a></p>
+            <p class="contact-note">Message us anytime - we're here to help!</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p><a href="mailto:Pepsdiamondempire@gmail.com">Pepsdiamondempire@gmail.com</a></p>
+            <p class="contact-note">We'll respond within 24 hours</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Location</h3>
+            <p>Ondo state, Nigeria</p>
+            <p class="contact-note">Proudly serving Nigeria and beyond</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-bar fade-in">
+      <div class="container features-grid">
+        <div class="feature-box">
+          <h4>Free Shipping</h4>
+          <p>On orders over $99</p>
+        </div>
+        <div class="feature-box">
+          <h4>Easy Returns</h4>
+          <p>30-day returns</p>
+        </div>
+        <div class="feature-box">
+          <h4>Secure Payment</h4>
+          <p>100% protected</p>
+        </div>
+        <div class="feature-box">
+          <h4>24/7 Support</h4>
+          <p>We're here to help</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter fade-in" id="newsletter">
+      <div class="container newsletter-grid">
+        <div class="newsletter-image">
+          <img src="asset/Womenwears/shopping good eyes.jpg" alt="Style List" loading="lazy">
+        </div>
+        <div class="newsletter-copy">
+          <span>NEW ARRIVAL</span>
+          <h2>JUST <br>FOR <br><span class="lettar">YOU</span> </h2>
+          
+          <div class="spark">
+            <span class="park">
+              <h4>First Time Ordering</h4> 
+            </span>
+            <span class="rack">
+              <h1>10% <br>OFF</h1> 
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-column footer-brand-col">
+        <div class="footer-brand">Pep's <span>Diamond</span> Empire</div>
+        <p>Timeless fashion for every moment. Designed with you in mind.</p>
+        <div class="social-links-footer">
+          <a href="https://www.facebook.com/PepsDiamondEmpire" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-column">
+          <h3 class="footer-heading">SHOP</h3>
+          <div class="footer-links">
+            <ul>
+              <li><a href="shop.html">All Products</a></li>
+              <li><a href="shop.html">New Arrivals</a></li>
+              <li><a href="shop.html?category=women">Women</a></li>
+              <li><a href="shop.html?category=men">Men</a></li>
+              <li><a href="shop.html">Sale</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">CUSTOMER CARE</h3>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="faq.html">Shipping & Delivery</a></li>
+              <li><a href="faq.html">Returns & Exchanges</a></li>
+              <li><a href="faq.html">Size Guide</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-heading">ABOUT US</h3>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="javascript:void(0);">Sustainability</a></li>
+              <li><a href="javascript:void(0);">Careers</a></li>
+              <li><a href="javascript:void(0);">Press</a></li>
+              <li><a href="javascript:void(0);">Store Locator</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Pep's Diamond Empire. All Rights Reserved.</p>
+        <p class="creator-credit">Created by <a href="https://wa.me/2347043005358" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> +234 704 300 5358</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="scroll-top-btn" id="scrollTop" title="Back to Top" aria-label="Scroll to top of page"><i class="fas fa-arrow-up"></i></a>
+  
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/2348165312235" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" title="Chat with us on WhatsApp" aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

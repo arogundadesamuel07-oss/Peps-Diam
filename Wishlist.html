@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Wishlist - Pep's Diamond Empire</title>
+  <link rel="icon" type="image/png" href="asset/peps looogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="diamond-loader"></div>
+    <div class="loader-text">Pep's <span>Diamond</span> Empire</div>
+  </div>
+
+  <div class="page-overlay" id="page-overlay"></div>
+  <header class="site-header">
+    <nav class="navbar container">
+      <div class="brand">
+        <img src="asset/peps looogo.png" alt="Pep's Diamond Empire" class="brand-logo">
+        <a href="index.html" class="brand-name">Pep's <span>Diamond</span> Empire</a>
+      </div>
+      <button class="menu-toggle" id="mobile-menu" title="Toggle navigation" aria-label="Open navigation menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="nav-links">
+        <button class="nav-close-btn" id="nav-close-btn" title="Close menu" aria-label="Close navigation menu"><i class="fas fa-times"></i></button>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <a href="wishlist.html" class="header-wishlist-btn" title="My Wishlist" aria-label="View Wishlist">
+          <i class="fas fa-heart"></i>
+          <span class="wishlist-counter">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-page-header fade-in">
+        <div class="container">
+            <h1>My Wishlist</h1>
+            <p>Your curated collection of favorite pieces. Ready to make them yours?</p>
+        </div>
+    </section>
+
+    <section class="shop-main-content">
+        <div class="container">
+            <!-- Wishlist Grid -->
+            <div id="wishlist-grid" class="shop-product-grid product-grid grid-cols-2">
+                <!-- Wishlisted products will be dynamically inserted here by script.js -->
+            </div>
+
+            <!-- Empty Wishlist Message -->
+            <div id="empty-wishlist-message" class="empty-state" style="display: none;">
+                <i class="fas fa-heart-broken"></i>
+                <h2>Your Wishlist is Empty</h2>
+                <p>You haven't added any items to your wishlist yet. Start exploring our collections and save your favorite pieces!</p>
+                <a href="shop.html" class="btn btn-primary">Explore Products</a>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-column footer-brand-col">
+        <div class="footer-brand">Pep's <span>Diamond</span> Empire</div>
+        <p>Timeless fashion for every moment. Designed with you in mind.</p>
+        <div class="social-links-footer">
+          <a href="https://www.facebook.com/PepsDiamondEmpire" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>SHOP</h3>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html">New Arrivals</a></li>
+          <li><a href="shop.html?category=women">Women</a></li>
+          <li><a href="shop.html?category=men">Men</a></li>
+          <li><a href="shop.html">Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>CUSTOMER CARE</h3>
+        <ul>
+          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="faq.html">Shipping & Delivery</a></li>
+          <li><a href="faq.html">Returns & Exchanges</a></li>
+          <li><a href="faq.html">Size Guide</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>ABOUT US</h3>
+        <ul class="footer-links">
+          <li><a href="index.html#about">Our Story</a></li>
+          <li><a href="javascript:void(0);">Sustainability</a></li>
+          <li><a href="javascript:void(0);">Careers</a></li>
+          <li><a href="javascript:void(0);">Press</a></li>
+          <li><a href="javascript:void(0);">Store Locator</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pep's Diamond Empire. All Rights Reserved.</p>
+      <p class="creator-credit">
+        Created by <a href="https://wa.me/2347043005358" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> +234 704 300 5358</a>
+      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="scroll-top-btn" id="scrollTop" title="Back to Top" aria-label="Scroll to top of page"><i class="fas fa-arrow-up"></i></a>
+  
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/2348165312235" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" title="Chat with us on WhatsApp" aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

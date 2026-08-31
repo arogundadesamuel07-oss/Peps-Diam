@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Products - Pep's Diamond Empire</title>
+  <link rel="icon" type="image/png" href="asset/peps looogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loader">
+    <div class="diamond-loader"></div>
+    <div class="loader-text">Pep's <span>Diamond</span> Empire</div>
+  </div>
+  
+
+  <div class="page-overlay" id="page-overlay"></div>
+  <header class="site-header">
+    <nav class="navbar container">
+      <div class="brand">
+        <img src="asset/peps looogo.png" alt="Pep's Diamond Empire" class="brand-logo">
+        <a href="index.html" class="brand-name">Pep's <span>Diamond</span> Empire</a>
+      </div>
+      <button class="menu-toggle" id="mobile-menu" title="Toggle navigation" aria-label="Open navigation menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="nav-links">
+        <button class="nav-close-btn" id="nav-close-btn" title="Close menu" aria-label="Close navigation menu"><i class="fas fa-times"></i></button>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <a href="wishlist.html" class="header-wishlist-btn" title="My Wishlist" aria-label="View Wishlist">
+          <i class="fas fa-heart"></i>
+          <span class="wishlist-counter">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-page-header fade-in">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Style, Quality, and Confidence in Every Piece. Explore our collections and find what makes you shine.</p>
+        </div>
+    </section>
+
+    <section class="shop-main-content">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Filter Sidebar -->
+                <aside class="shop-sidebar fade-in">
+                    <div class="search-widget">
+                        <h4>Search</h4>
+                        <input type="search" id="product-search" placeholder="Search for products, prices, sizes..." aria-label="Search products">
+                    </div>
+
+                    <h4>Categories</h4>
+                    <ul class="category-filters">
+                        <li><button class="filter-btn active" data-filter="all">All Products</button></li>
+                        <li><button class="filter-btn" data-filter="men">Men's Wears</button></li>
+                        <li><button class="filter-btn" data-filter="women">Women's Wears</button></li>
+                        <li><button class="filter-btn" data-filter="shoes">Shoes</button></li>
+                        <li><button class="filter-btn" data-filter="bags">Bags</button></li>
+                        <li><button class="filter-btn" data-filter="accessories">Accessories</button></li>
+                    </ul>
+                </aside>
+
+                <!-- Product Grid -->
+                <div class="shop-main">
+                    <div class="shop-toolbar">
+                        <p class="product-count">Showing <span id="visible-count">57</span> products in <span id="active-layout">2-column</span> view</p>
+                        <div class="layout-controls" role="group" aria-label="Product layout">
+                            <button class="layout-btn" data-columns="1" title="1 Column" aria-label="1 Column Layout"><span>1</span></button>
+                            <button class="layout-btn active" data-columns="2" title="2 Columns" aria-label="2 Column Layout"><span>2</span></button>
+                            <button class="layout-btn" data-columns="3" title="3 Columns" aria-label="3 Column Layout"><span>3</span></button>
+                        </div>
+                        <h6 class="product-count">2 and 3 columns are only visible in larger views.</h6>
+                    </div>
+
+                    <div class="shop-product-grid product-grid grid-cols-2">
+                        <!-- Men's Wears -->
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61701.jpg" alt="Luxury Senator Men 2pcs set" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Luxury Senator Men 2pcs set - ₦35,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Luxury Senator Men 2pcs set</h3><p class="price">₦35,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61695.jpg" alt="Luxury Senator Men 2pcs set" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Luxury Senator Men 2pcs set - ₦35,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Luxury Senator Men 2pcs set</h3><p class="price">₦35,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61734.jpg" alt="Luxury condom shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Luxury condom shirt - ₦17,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Luxury condom shirt</h3><p class="price">₦17,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61733.jpg" alt="Luxury condom shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Luxury condom shirt - ₦17,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Luxury condom shirt</h3><p class="price">₦17,500.00</p></div>
+                        </article>
+                        
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61732.jpg" alt="Luxury condom shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Luxury condom shirt - ₦17,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Luxury condom shirt</h3><p class="price">₦17,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61731.jpg" alt="Luxury condom shirt" loading="lazy">
+                                <span class="product-badge">Sale</span>
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Luxury condom shirt - ₦17,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Luxury condom shirt</h3><p class="price">₦17,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61730.jpg" alt="Luxury condom shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Luxury condom shirt - ₦17,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Luxury condom shirt</h3><p class="price">₦17,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61721.jpg" alt="US standard condom shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="US standard condom shirt - ₦20,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>US standard condom shirt</h3><p class="price">₦20,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61717.jpg" alt="US standard condom shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="US standard condom shirt - ₦20,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>US standard condom shirt</h3><p class="price">₦20,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61715.jpg" alt="Ivory Executive Blazer" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Ivory Executive Blazer - ₦210,700.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Ivory Executive Blazer</h3><p class="price">₦210,700.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61722.jpg" alt="Up and down vest" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Up and down vest">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Buy Me</h3><p class="price">₦</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61713.jpg" alt="Up and down vest" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Up and down vest">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Up and down vest</h3><p class="price">₦15,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61710.jpg" alt="Up and down vest" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Up and down vest">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Up and down vest</h3><p class="price">₦15,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61709.jpg" alt="US standard condom shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="US standard condom shirt - ₦20,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>US standard condom shirt</h3><p class="price">₦20,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61703.jpg" alt="US standard condom shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="US standard condom shirt - ₦20,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>US standard condom shirt</h3><p class="price">₦20,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61700.jpg" alt="US standard condom shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="US standard condom shirt - ₦20,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>US standard condom shirt</h3><p class="price">₦20,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61698.jpg" alt="US standard condom shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="US standard condom shirt - ₦20,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>US standard condom shirt</h3><p class="price">₦20,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61697.jpg" alt="US standard condom shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="US standard condom shirt - ₦20,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>US standard condom shirt</h3><p class="price">₦20,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61438.jpg" alt="Italian pant trouser" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Italian pant trouser - ₦25,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Italian pant trouser</h3><p class="price">₦25,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61807.jpg" alt="Vintage condom" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Vintage condom - ₦17,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Vintage condom</h3><p class="price">₦17,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61809.jpg" alt="Vintage condom" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Vintage condom - ₦17,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Vintage condom</h3><p class="price">₦17,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61813.jpg" alt="Vintage condom" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Vintage condom - ₦17,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Vintage condom</h3><p class="price">₦17,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61453.jpg" alt="Polo ralph chinos" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Polo ralph chinos - 22,000, sizes 30 - 40, colours; black, grey, blue, khaki.">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Polo ralph chinos</h3><p class="price">₦22,000.00</p><p class="product-details">Sizes: 30-40<br>Colours: black, grey, blue, khaki.</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Men wears/61751.jpg" alt="Polo white shirt" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Polo white shirt - 12,000.">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Polo white shirt</h3><p class="price">₦12,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61801.jpg" alt="3in 1 condom boxers" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="3in 1 condom boxers - ₦6,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>3in 1 condom boxers</h3><p class="price">₦6,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="men">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61802.jpg" alt="3in 1 condom boxers" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="3in 1 condom boxers - ₦6,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>3in 1 condom boxers</h3><p class="price">₦6,500.00</p></div>
+                        </article>
+
+                        <!-- Women's Wears -->
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61432.jpg" alt="Wrap Summer Dress" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Wrap Summer Dress - ₦15,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Wrap Summer Dress</h3><p class="price">₦15,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61435.jpg" alt="Top and Jean" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Top and Jean - ₦10,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Top and Jean</h3><p class="price">₦10,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61699.jpg" alt="Round Top" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Round Top - ₦10,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Round Top</h3><p class="price">₦10,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61720.jpg" alt="Blouse" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Blouse - ₦9,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Blouse</h3><p class="price">₦9,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61753.jpg" alt="Track suit" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Track suit - ₦33,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Track suit</h3><p class="product-details">Size: XL</p><p class="price">₦33,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61797.jpg" alt="Track suit" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Track suit - ₦33,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Track suit</h3><p class="product-details">Size: XL</p><p class="price">₦33,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61759.jpg" alt="Crazy Jean" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Crazy Jean - ₦17,000.00, Sizes; small - 2XL">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Crazy Jean</h3><p class="product-details">Size: small - 2XL</p><p class="price">₦17,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61773.jpg" alt="High quality basic tops" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="High quality basic tops - ₦7,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>High quality basic tops</h3><p class="price">₦7,500.00</p></div>
+                        </article>
+                        
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61775.jpg" alt="High quality basic tops" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="High quality basic tops - ₦7,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>High quality basic tops</h3><p class="price">₦7,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61777.jpg" alt="High quality basic tops" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="High quality basic tops - ₦7,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>High quality basic tops</h3><p class="price">₦7,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61779.jpg" alt="High quality basic tops" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="High quality basic tops - ₦7,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>High quality basic tops</h3><p class="price">₦7,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61780.jpg" alt="High quality basic tops" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="High quality basic tops - ₦7,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>High quality basic tops</h3><p class="price">₦7,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61781.jpg" alt="High quality basic tops" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="High quality basic tops - ₦7,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>High quality basic tops</h3><p class="price">₦7,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61782.jpg" alt="Armless Blouse" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Armless blouse - ₦12,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Armless Blouse</h3><p class="price">₦12,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61783.jpg" alt="High quality basic tops" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="High quality basic tops - ₦7,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>High quality basic tops</h3><p class="price">₦7,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61784.jpg" alt="High quality basic tops" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="High quality basic tops - ₦7,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>High quality basic tops</h3><p class="price">₦7,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61793.jpg" alt="Fashion Nova Jeans" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Fashion Nova Jeans Update, Available sizes; 28, 30, 34, 36, - ₦18,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Fashion Nova Jeans</h3><p class="product-details">Sizes: 28, 30, 34, 36</p><p class="price">₦18,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61795.jpg" alt="Up and down" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Up and down - ₦32,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Up and down</h3><p class="price">₦32,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61799.jpg" alt="Gown" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Gown - ₦44,180.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Gown</h3><p class="price">₦12,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61805.jpg" alt="Plain black fashionova jeans" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Plain black fashionova jeans - ₦23,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Plain black fashionova jeans</h3><p class="product-details">Sizes: 30-40</p><p class="price">₦23,000.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="women">
+                            <div class="product-image">
+                                <img src="asset/Womenwears/61811.jpg" alt="Plain black fashionova jeans" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Plain black fashionova jeans - ₦23,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Plain black fashionova jeans</h3><p class="product-details">Sizes: 30-40</p><p class="price">₦23,000.00</p></div>
+                        </article>
+
+                        <!-- Bags -->
+                        <article class="product-card" data-category="bags">
+                            <div class="product-image">
+                                <img src="asset/bags/download5.jpg" alt="Diamond Quilted Handbag" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Diamond Quilted Handbag - ₦47,600.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Diamond Quilted Handbag</h3><p class="price">₦27,600.00</p></div>
+                        </article>
+
+                        <!-- Shoes -->
+                        <article class="product-card" data-category="shoes">
+                            <div class="product-image">
+                                <img src="asset/shoes/61441.jpg" alt="Handcrafted Leather palm" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Handcrafted Leather palm - ₦92,400.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Handcrafted Leather palm</h3><p class="product-details">Sizes: 40-45 <br>Colours: black, white, ash</p><p class="price">₦12,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="shoes">
+                            <div class="product-image">
+                                <img src="asset/shoes/61728.jpg" alt="Sandal" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Sandal - ₦15,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Sandal</h3><p class="price">₦15,000.00</p><p class="product-details">Sizes: 40-45 <br>Colour: brown, black, ash</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="shoes">
+                            <div class="product-image">
+                                <img src="asset/shoes/61741.jpg" alt="Leather palm" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Handcrafted Leather palm - ₦13,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Leather palm</h3><p class="product-details">Sizes: 40-45 <br>Colour: brown, black, ash</p><p class="price">₦13,500.00</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="shoes">
+                            <div class="product-image">
+                                <img src="asset/shoes/61757.jpg" alt="Ladies palm" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Ladies palm - ₦11,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Ladies palm</h3><p class="price">₦11,000.00</p><p class="product-details">Sizes: 37-41</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="shoes">
+                            <div class="product-image">
+                                <img src="asset/shoes/61760.jpg" alt="Ladies palm" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Ladies palm- ₦8,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Ladies palm</h3><p class="price">₦8,000.00</p><p class="product-details">Sizes: 37-42</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="shoes">
+                            <div class="product-image">
+                                <img src="asset/shoes/61763.jpg" alt="Slippers Heel" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Slippers (Heel) ">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Slippers Heel</h3><p class="price">₦13,500.00</p><p class="product-details">Colour and sizes:<br>
+                            *Off-white: 39-40<br>*Black: 39<br>*Silver: 40</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="shoes">
+                            <div class="product-image">
+                                <img src="asset/shoes/61767.jpg" alt="Slippers" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="slippers - ₦6,500.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Slippers</h3><p class="price">₦6,500.00</p><p class="product-details">Sizes: 37-41 <br>All colours available</p></div>
+                        </article>
+
+                        <article class="product-card" data-category="shoes">
+                            <div class="product-image">
+                                <img src="asset/shoes/61791.jpg" alt="Slippers" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Slippers - ₦11,000.00">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Slippers</h3><p class="price">₦11,000.00</p><p class="product-details">Sizes: 37-41</p></div>
+                        </article>
+
+                        <!-- Accessories -->
+                        <article class="product-card" data-category="accessories">
+                            <div class="product-image">
+                                <img src="asset/accessories/accessories.jpg" alt="Chains, earrings and other ornaments" loading="lazy">
+                                <button class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist"><i class="fas fa-heart"></i></button>
+                                <button class="inquire-btn" data-product="Chains, earrings and other ornaments">Inquire</button>
+                            </div>
+                            <div class="product-copy"><h3>Chains, earrings and other ornaments</h3><p class="price"></p></div>
+                        </article>
+                    </div>
+
+                    <!-- No Products Found Message -->
+                    <div id="no-products-message" class="empty-state" style="display: none;">
+                        <i class="fas fa-search"></i>
+                        <h2>No Products Found</h2>
+                        <p>We couldn't find any items matching your filter or search query. Try searching with different keywords.</p>
+                        <button class="btn btn-primary" onclick="document.getElementById('product-search').value=''; document.querySelector('.filter-btn[data-filter=all]').click();">View All Products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-column footer-brand-col">
+        <div class="footer-brand">Pep's <span>Diamond</span> Empire</div>
+        <p>Timeless fashion for every moment. Designed with you in mind.</p>
+        <div class="social-links-footer">
+          <a href="https://www.facebook.com/PepsDiamondEmpire" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>SHOP</h3>
+        <ul>
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html">New Arrivals</a></li>
+          <li><a href="shop.html?category=women">Women</a></li>
+          <li><a href="shop.html?category=men">Men</a></li>
+          <li><a href="shop.html">Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>CUSTOMER CARE</h3>
+        <ul>
+          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="faq.html">Shipping & Delivery</a></li>
+          <li><a href="faq.html">Returns & Exchanges</a></li>
+          <li><a href="faq.html">Size Guide</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>ABOUT US</h3>
+        <ul class="footer-links">
+          <li><a href="index.html#about">Our Story</a></li>
+          <li><a href="javascript:void(0);">Sustainability</a></li>
+          <li><a href="javascript:void(0);">Careers</a></li>
+          <li><a href="javascript:void(0);">Press</a></li>
+          <li><a href="javascript:void(0);">Store Locator</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pep's Diamond Empire. All Rights Reserved.</p>
+      <p class="creator-credit">
+        Created by <a href="https://wa.me/2347043005358" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> +234 704 300 5358</a>
+      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="scroll-top-btn" id="scrollTop" title="Back to Top" aria-label="Scroll to top of page"><i class="fas fa-arrow-up"></i></a>
+  
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/2348165312235" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" title="Chat with us on WhatsApp" aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
