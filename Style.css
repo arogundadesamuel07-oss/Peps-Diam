@@ -1949,6 +1949,7 @@ width: 50%; }
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 23px;
+    margin-left: 0;
   }
 
   .hero-image {
