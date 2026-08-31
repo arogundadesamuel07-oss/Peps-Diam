@@ -341,7 +341,7 @@ a {
   display: none;
   border: none;
   background: transparent;
-  color: var(--gold);
+  color: var(--gold-soft);
   cursor: pointer;
   font-size: 1.5rem;
 }
@@ -1250,14 +1250,34 @@ width: 50%; }
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
+  background: blue;
   color: white;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .social-links-footer a:hover {
-  background: rgba(212, 175, 55, 0.15);
+  background: var(--gold);
   transform: translateY(-2px);
+}
+
+.social-links {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--gold-soft);
+  color: white;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.social-links:hover {
+  background: var(--gold);
+  transform: translateY(-2px);
+}
+.social-links:active {
+  background: rgb(5, 5, 248);
+  transition: ease 0.2s;
 }
 
 .footer-subscribe-form {
@@ -1296,7 +1316,7 @@ width: 50%; }
 
 .scroll-top-btn {
   position: fixed;
-  bottom: 55px;
+  bottom: 57px;
   right: 95px;
   width: 52px;
   height: 52px;
@@ -1744,7 +1764,7 @@ width: 50%; }
 /* Floating WhatsApp Button */
 .whatsapp-sticky {
   position: fixed;
-  bottom: 55px;
+  bottom: 57px;
   right: 30px;
   width: 52px;
   height: 52px;
@@ -1904,13 +1924,13 @@ width: 50%; }
   .nav-links {
     position: fixed;
     inset: 0 0 0 100%;
-    width: 40%;
-    height: 400px;
+    width: 45%;
+    height: 70vh;
     background: var(--surface);
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1.3rem;
     border: 1px solid var(--gold-soft);
     padding: 6rem 2rem;
     padding-left: 3rem;
