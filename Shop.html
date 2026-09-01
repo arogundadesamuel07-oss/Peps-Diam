@@ -36,11 +36,11 @@
       </div>
       <ul class="nav-links" id="nav-links">
         <button class="nav-close-btn" id="nav-close-btn" title="Close menu" aria-label="Close navigation menu"><i class="fas fa-times"></i></button>
-        <li><a href="#home">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
         <div class="social-links-footer">
         </div>
       </ul>
@@ -67,10 +67,17 @@
             <div class="shop-layout">
                 <!-- Filter Sidebar -->
                 <aside class="shop-sidebar fade-in">
-                    <div class="search-widget">
-                        <h4>Search</h4>
-                        <input type="search" id="product-search" placeholder="Search for products, prices, sizes..." aria-label="Search products">
+                    <div class="search">
+                        <div class="search-widget">
+                            <h4>Search</h4>
+                            <input type="search" id="searchInput" placeholder="Search on page ..." aria-label="Search- products">
+                        </div>
+                        <!--
+                        <button onclick="findText()">Search</button>
+                        -->
+                    
                     </div>
+                    
 
                     <h4>Categories</h4>
                     <ul class="category-filters">

@@ -257,11 +257,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const shopProductGrid = document.querySelector('.shop-product-grid');
   if (shopProductGrid) {
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const searchInput = document.getElementById('product-search');
+    const searchInput = document.getElementById('searchInput');
     const products = Array.from(shopProductGrid.querySelectorAll('.product-card'));
     const productCountText = document.getElementById('visible-count');
     const activeLayoutText = document.getElementById('active-layout');
     const noProductsMsg = document.getElementById('no-products-message');
+
+    // Search form
+
+    let matches = [];
+    let currentIndex = -1;
+
+    function findText() {
+      clearHighlights();
+      const query = document.getElementById('searchInput').value.trim();
+      if (!query) return;
+
+      matches = []
+    }
 
     // Restore saved layout preference (1, 2, or 3 columns)
     const savedLayout = localStorage.getItem('peps_shop_layout') || '2';
