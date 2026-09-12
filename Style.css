@@ -431,13 +431,18 @@ a {
 }
 @media (max-width: 860px) {
   .hero-copy {
-    margin-top: 240px;
+    position: relative;
+    top: 40px;
     display: grid;
-    gap: 1rem;
-    height: 60vh;
+    gap: 0.5rem;
+    left: 0px;
+    height: 50vh;
+    width: 90vw;
     animation: text-reveal 3s ease-out forwards;
     background: rgba(255, 255, 255, 0.1);
     padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-top: 10px;
     border: 1px solid rgb(94, 89, 89);
     border-top-left-radius: 30px;
@@ -445,7 +450,7 @@ a {
   }
   .eyebrow {
     display: inline-flex;
-    align-items: center;
+    text-align: center;
     gap: 0.5rem;
     font-size: 0.85rem;
     letter-spacing: 0.35rem;
@@ -589,7 +594,7 @@ a {
 }
 
 .hero-product-rotator {
-  top: 10px;
+  top: 90px;
   left: 60px;
   position: relative;
   width: 420px;
@@ -1028,6 +1033,11 @@ a.category-pill {
   font-size: 1.15rem;
   margin-bottom: 0.6rem;
 }
+.product-copy .product-details span{
+  height: 23px;
+  width: 23px;
+  background-color: rgb(83, 81, 81);
+}
 
 .price {
   font-weight: 700;
@@ -1039,7 +1049,7 @@ a.category-pill {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  color: var(--muted);
+  color: var(--gold);
   font-size: 0.95rem;
 }
 
@@ -1887,6 +1897,8 @@ width: 50%; }
 
 @media (max-width: 860px) {
   .hero-inner {
+    position: relative;
+    left: 2px;
     grid-template-columns: 1fr;
     text-align: center;
   }
@@ -1952,13 +1964,18 @@ width: 50%; }
     transform: rotate(45deg);
   }
 }
+@media (max-width: 414px) {
+  .nav-links {
+    height: 30vh;
+  }
+}
 
 @media (max-width: 1080px) {
   .nav-links {
     position: fixed;
     inset: 0 0 0 100%;
     width: 45%;
-    height: 60vh;
+    height: 40vh;
     background: var(--surface);
     flex-direction: column;
     justify-content: flex-start;
@@ -1974,6 +1991,28 @@ width: 50%; }
     border-top-left-radius: 35px;
     border-bottom-left-radius: 35px;border-bottom-right-radius: 35px;
   }
+  .park{
+  background-color: black;
+  width: 10rem;
+  height: 10vh;
+  text-align: center;
+  border-radius: 4px;
+  padding: 24px 0px;
+  corner-shape: squircle;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+.rack{
+  background-color: #d4af37;
+  width: 6rem;
+  height: 10vh;
+  text-align: center;
+  padding: 30px 0px;
+  line-height: 17px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  corner-shape: squircle;
+}
 
   .nav-links.active {
     transform: translateX(-100%);
@@ -2290,11 +2329,12 @@ width: 80%; }
   font-size: 0.95rem;
 }
 .product-details {
+  width: 100%;
   font-size: 0.9rem;
   color: var(--muted);
   line-height: 1.5;
-  margin-top: 0.5rem;
 }
+
 .product-card .product-copy {
   color: rgb(68, 63, 63);
   transition: background-color 0.3s ease;
@@ -2382,6 +2422,12 @@ width: 80%; }
   opacity: 0 !important;
   transform: scale(0.95) !important;
   pointer-events: none;
+}
+.product-copy .moi {
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background-color: red;
 }
 
 /* Wishlist Active & Heart Animation */
